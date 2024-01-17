@@ -1,1 +1,27 @@
+The memory game consists of a word list of all possible words used in the game, another list of random words taken from that big list 
+for the user to match to, and then an interface for handling user input called "wordstream", along with a means of matching user 
+input to the list of words.  
+
+Populating Word List
+---
+Vectors contain the words that get displayed to the screen.  These words must be memorized by the player in order to get a high score.
+
+Word Populate Functions
+--
+Clearscreen prints a blank space by entering a 30 character long string of white space and then a new line as 
+the last character of that string.
+
+random_word loops to check a random integer of maximum value equal to size of word_list, and uses that as the element 
+of word_list vector.  This gives a random word.  It then checks if the word is a repeat, and if 
+that check is false, it will return the word.  If the check is true, then the word is not returned and random_word finds a 
+different word to work with.
+
+checkrepeat starts by assuming that userguess is false, and loops through word_round.  word_round is a list of words that user 
+has guessed already, which populates itself during gameplay.  checkrepeat checks if wordstr, the word that user has guessed in 
+the present execution of checkrepeat is equal to any word in word_round.  If true, then checkrepeat returns true, if not, it 
+returns false.
+
+
+--
+---
 
