@@ -8,9 +8,6 @@ Vectors contain the words that get displayed to the screen.  These words must be
 
 Word Populate Functions
 --
-Clearscreen prints a blank space by entering a 30 character long string of white space and then a new line as 
-the last character of that string.
-
 random_word loops to check a random integer of maximum value equal to size of word_list, and uses that as the element 
 of word_list vector.  This gives a random word.  It then checks if the word is a repeat, and if 
 that check is false, it will return the word.  If the check is true, then the word is not returned and random_word finds a 
@@ -20,8 +17,14 @@ checkrepeat starts by assuming that userguess is false, and loops through word_r
 has guessed already, which populates itself during gameplay.  checkrepeat checks if wordstr, the word that user has guessed in 
 the present execution of checkrepeat is equal to any word in word_round.  If true, then checkrepeat returns true, if not, it 
 returns false.
-
-
 --
 ---
 
+Display
+---
+Display Functions
+--
+Clearscreen prints a blank space by entering a 30 character long string of white space and then a new line as 
+the last character of that string.
+--
+---
